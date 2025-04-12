@@ -50,9 +50,9 @@
         layer_3 {
             bindings = <
 &trans  &trans  &trans           &trans             &trans         &trans                          &trans       &trans              &trans              &trans            &trans     &trans
-&trans  &trans  &kp PG_UP        &kp UP             &kp PAGE_DOWN  &kp F2                          &kp KP_PLUS  &kp N7              &kp N8              &kp N9            &kp ASTRK  &trans
+&trans  &trans  &kp PG_UP        &kp UP             &kp PAGE_DOWN  &kp F2                          &kp KP_PLUS  &kp N7              &kp N8              &kp N9            &kp LS(SEMI)  &trans
 &trans  &trans  &kp LEFT         &kp DOWN           &kp RIGHT      &kp F5                          &kp MINUS    &mt RCTRL NUMBER_4  &mt RIGHT_SHIFT N5  &mt RIGHT_ALT N6  &kp SLASH  &trans
-&trans  &trans  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &mt LCTRL F8   &kp F12        &trans   &trans  &kp N0       &mt RCTRL N1        &mt RIGHT_SHIFT N2  &mt RIGHT_ALT N3  &kp EQUAL  &trans
+&trans  &trans  &mt LEFT_ALT F6  &mt LEFT_SHIFT F7  &mt LCTRL F8   &kp F12        &trans   &trans  &kp N0       &mt RCTRL N1        &mt RIGHT_SHIFT N2  &mt RIGHT_ALT N3  &kp LS(MINUS)   &trans
 &trans  &trans  &trans           &trans             &trans         &kp BACKSPACE  &kp DEL  &trans  &trans       &kp PERIOD          &trans              &trans            &trans     &trans
             >;
         };
