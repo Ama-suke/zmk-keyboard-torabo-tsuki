@@ -2,6 +2,14 @@
 #include "torabo_tsuki_layouts.dtsi"
 
 / {
+    behaviors {
+        hold_tap {
+            compatible = "zmk,behavior-hold-tap";
+            hold-tap-ms = <200>;
+            flavor = "balanced";
+        };
+    };
+    
     chosen {
         zmk,physical-layout = &physical_layout_l;
         zmk,kscan = &kscan0;
@@ -135,14 +143,6 @@
                 <NRF_PSEL(SPIM_MOSI, 0, 19)>,
                 <NRF_PSEL(SPIM_MISO, 0, 19)>;
             low-power-enable;
-        };
-    };
-    
-    behaviors {
-        hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            hold-tap-ms = <200>;
-            flavor = "balanced";
         };
     };
 };
