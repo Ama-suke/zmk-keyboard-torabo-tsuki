@@ -1,15 +1,7 @@
 #include <dt-bindings/zmk/matrix_transform.h>
 #include "torabo_tsuki_layouts.dtsi"
 
-/ {
-    behaviors {
-        hold_tap {
-            compatible = "zmk,behavior-hold-tap";
-            hold-tap-ms = <200>;
-            flavor = "balanced";
-        };
-    };
-    
+/ {    
     chosen {
         zmk,physical-layout = &physical_layout_l;
         zmk,kscan = &kscan0;
