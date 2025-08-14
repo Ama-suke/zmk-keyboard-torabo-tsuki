@@ -2,6 +2,27 @@
 #include "../../../config/keymap.keymap"
 #include <input/processors.dtsi>
 
-&mkp_input_listener {
-    input-processors = <&zip_temp_layer 1 10000>;
+/{
+    zip_temp_layer: zip_temp_layer {
+        require-prior-idle-ms = <500>;
+
+        excluded-positions = <
+            14 15 16 17 18 19 20 21
+            26 27 28 29 30 31 32 33
+            38 39 40 41 44 45 46 47
+        >;
+    };
+};
+
+&trackball_listener {
+    &trackball_listener {
+        input-processors = <&zip_temp_layer 1 10000>;
+        
+        scroller {
+            layers = <3>;
+            input-processors = <&zip_xy_to_scroll_mapper>,
+                               <&zip_scroll_scaler 1 20>,  // scale 1/20
+                               <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>; // swap x
+        };
+    };
 };
