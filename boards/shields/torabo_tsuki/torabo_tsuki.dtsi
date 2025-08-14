@@ -95,7 +95,7 @@
             layers = <3>;
             input-processors = <&zip_xy_to_scroll_mapper>,
                                <&zip_scroll_scaler 1 20>,  // scale 1/20
-                               <&zip_scroll_transform 1>; // swap x
+                               <&zip_scroll_transform 2>; // swap x
         };
     };
 
