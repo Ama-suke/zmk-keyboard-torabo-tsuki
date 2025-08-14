@@ -169,13 +169,3 @@
         // snipe-layers = <1>;
     };
 };
-
-&zip_temp_layer {
-    require-prior-idle-ms = <200>;
-
-    excluded-positions = <
-        14 15 16 17 18 19 20 21
-        26 27 28 29 30 31 32 33
-        38 39 40 41 44 45 46 47
-    >;
-};
