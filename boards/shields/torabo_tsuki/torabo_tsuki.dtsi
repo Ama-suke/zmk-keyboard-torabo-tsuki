@@ -91,7 +91,7 @@
 
         input-processors = <&zip_temp_layer 1 10000>;
         scroll_scaler = <&zip_scroll_scaler 1 5>;
-        scroll_invert = <&zip_xy_transform (INPUT_TRANSFORM_X_INVERT)>;
+        scroll_invert = <&zip_scroll_transform (INPUT_TRANSFORM_X_INVERT)>;
         
         scroller {
             layers = <3>;
