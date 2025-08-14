@@ -5,14 +5,3 @@
 &mkp_input_listener {
     input-processors = <&zip_temp_layer 1 10000>;
 };
-
-&trackball_listener {
-    input-processors = <&zip_temp_layer 2 10000>;
-    
-    scroller {
-        layers = <3>;
-        input-processors = <&zip_xy_to_scroll_mapper>,
-                            <&zip_scroll_scaler 1 20>,  // scale 1/20
-                            <&zip_scroll_transform INPUT_TRANSFORM_X_INVERT>; // swap x
-    };
-};
