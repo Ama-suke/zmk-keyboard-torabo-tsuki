@@ -1,4 +1,5 @@
 #include <dt-bindings/zmk/matrix_transform.h>
+#include <input/processors.dtsi>
 #include "torabo_tsuki_layouts.dtsi"
 
 / {    
@@ -87,6 +88,13 @@
     trackball_listener: trackball_listener {
         compatible = "zmk,input-listener";
         device = <&trackball>;
+
+        input-processors = <&zip_temp_layer 1 10000>;
+        
+        scroller {
+            layers = <3>;
+            input-processors = <&zip_xy_to_scroll_mapper>;
+        };
     };
 
     vbatt: vbatt {
@@ -157,7 +165,36 @@
         /*   optional features   */
         power-gpios = <&bmp 14 GPIO_ACTIVE_HIGH>;
         // snipe-layers = <1>;
-        scroll-layers = <3>;
-        automouse-layer = <1>;
     };
+};
+
+&zip_temp_layer {
+    require-prior-idle-ms = <200>;
+
+    excluded-positions = <
+        14
+        15
+        16
+        17
+        18
+        19
+        20
+        21
+        26
+        27
+        28
+        29
+        30
+        31
+        32
+        33
+        38
+        39
+        40
+        41
+        44
+        45
+        46
+        47
+    >;
 };
