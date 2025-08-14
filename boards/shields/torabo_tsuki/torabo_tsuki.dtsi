@@ -90,11 +90,11 @@
         device = <&trackball>;
 
         input-processors = <&zip_temp_layer 1 10000>;
+        scroll_scaler = <&zip_scroll_scaler 1 5>;
+        scroll_invert = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;
         
         scroller {
             layers = <3>;
-            scaler = <&zip_scroll_scaler 1 5>;
-            invert = <&zip_xy_transform INPUT_TRANSFORM_X_INVERT>;
             input-processors = <&zip_xy_to_scroll_mapper>;
         };
     };
@@ -174,29 +174,8 @@
     require-prior-idle-ms = <200>;
 
     excluded-positions = <
-        14
-        15
-        16
-        17
-        18
-        19
-        20
-        21
-        26
-        27
-        28
-        29
-        30
-        31
-        32
-        33
-        38
-        39
-        40
-        41
-        44
-        45
-        46
-        47
+        14 15 16 17 18 19 20 21
+        26 27 28 29 30 31 32 33
+        38 39 40 41 44 45 46 47
     >;
 };
