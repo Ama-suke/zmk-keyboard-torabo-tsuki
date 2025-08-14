@@ -65,4 +65,4 @@
 
 &lt {
     tapping-term-ms = <500>;
-}
+};
