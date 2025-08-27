@@ -4,7 +4,7 @@
 
 /{
     zip_temp_layer: zip_temp_layer {
-        require-prior-idle-ms = <100>;
+        require-prior-idle-ms = <500>;
 
         excluded-positions = <
             14 15 16 17 18 19 20 21
@@ -15,7 +15,7 @@
 };
 
 &trackball_listener {
-    input-processors = <&zip_temp_layer 1 1000>;
+    input-processors = <&zip_temp_layer 1 10000>;
     
     scroller {
         layers = <3>;
