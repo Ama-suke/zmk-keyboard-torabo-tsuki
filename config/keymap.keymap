@@ -29,10 +29,10 @@
 
         layer_1 {
             bindings = <
-&trans  &trans     &trans              &trans                &trans           &trans                         &trans  &trans     &trans           &trans         &trans  &trans
+&tog 1  &trans     &trans              &trans                &trans           &trans                         &trans  &trans     &trans           &trans         &trans  &trans
 &trans  &kp LC(Y)  &kp LA(LEFT)        &kp LA(RIGHT)         &kp LC(LS(TAB))  &kp LC(TAB)                    &trans  &trans     &trans           &trans         &trans  &trans
 &trans  &trans     &mkp MB3            &mkp RCLK             &mkp LCLK        &kp LC(T)                      &trans  &mkp LCLK  &mkp RCLK        &mkp MB3       &trans  &trans
-&trans  &kp LC(Z)  &mt LEFT_ALT LC(X)  &mt LEFT_SHIFT LC(C)  &mt LCTRL LC(V)  &kp LS(LC(T))  &trans  &trans  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &trans  &trans
+&trans  &kp LC(Z)  &mt LEFT_ALT LC(X)  &mt LEFT_SHIFT LC(C)  &mt LCTRL LC(V)  &kp LS(LC(T))  &to 0   &trans  &trans  &kp RCTRL  &kp RIGHT_SHIFT  &kp RIGHT_ALT  &trans  &trans
 &trans  &trans     &trans              &trans                &trans           &trans         &trans  &trans  &trans  &trans     &trans           &trans         &trans  &trans
             >;
         };
@@ -60,7 +60,7 @@
         layer_4 {
             bindings = <
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
-&trans  &trans  &kp W   &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
+&trans  &trans  &tog 1  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans                  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
 &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans  &trans
